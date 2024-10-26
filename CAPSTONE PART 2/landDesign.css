@@ -1,0 +1,280 @@
+* html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+  background-image: url("dentalbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(37, 194, 181);
+    padding: 10px;
+    border-radius: 0;
+    
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid rgb(37, 194, 181);
+    padding: 10px;
+    border-radius: 0;
+}
+
+nav ul li .login {
+    color: rgb(56, 45, 95);
+    padding: 10px;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(37, 194, 181);
+ 
+}
+/*------------------------ZERO section---------------------------------*/
+.zerobg{
+  width: 100%; /* adjust the width as needed */
+  height: 150vh; /* adjust the height as needed */
+  background-color: #312c2c91; /* choose your desired background color */
+  position: absolute; /* or relative, depending on your layout */
+  top: 0;
+  left: 0;
+  z-index: -1; 
+  
+}
+.zero h1 {
+    animation: slideIn 1s ease-in-out;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'varela-round';
+    font-size: 50px;
+    margin-top: 0%;
+    margin: 20%;
+    display: block;
+    justify-content: center;
+     text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    
+} 
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .zero h1 {
+        font-size: 30px;
+    }
+}
+
+/*------------------------1st section---------------------------------*/
+.one{
+    padding-top: 50%;
+}
+/*------------------------2nd section---------------------------------*/
+.two{
+  
+  background-color:white;
+  }
+
+.two .serviceTitle{
+    text-align: center;
+    padding: 50px;
+}
+.row{
+    padding: 40px;
+}
+
+
+/*------------------------3rd section---------------------------------*/
+.three{
+  padding: 50px;
+  background-color:white;
+  color: black;
+}
+.three h1{
+    text-align: center;
+}
+
+.three .container2{
+    margin: 5%;
+}
+.carousel-inner {
+	background-color: #f2f2f2;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	opacity: 0.3;
+	background-color: #ccc;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+@media only screen and (min-width: 1800px) {
+    .one, .two, .three, .four{
+       
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1799px) {
+    .one, .two, .three, .four{
+    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .one, .two, .three, .four{   
+    }
+}
+/*------------------------footer---------------------------------*/
+.container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+   
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  
+
